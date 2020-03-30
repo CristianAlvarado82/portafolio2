@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { InfoPaginaService } from '../../service/info-pagina.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +9,7 @@ import { DatePipe } from '@angular/common';
 export class FooterComponent implements OnInit {
 
   gestion: number = new Date().getFullYear();
-  constructor() { }
+  constructor(public infoPaginaService:InfoPaginaService) { }
 
   ngOnInit(): void {
   }
