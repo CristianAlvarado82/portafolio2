@@ -155,3 +155,10 @@
         -webkit-animation-name: bounceInDown;
         animation-name: bounceInDown;
       }
+
+      /*loading*/
+      svg path,
+      svg rect{
+        fill: black;
+      }
+      /*fijn loading*/
